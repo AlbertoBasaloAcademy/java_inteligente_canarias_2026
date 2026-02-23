@@ -18,11 +18,11 @@ Ask for the spec file if not provided.
 
 ### Code Guidelines
 
-- Use ES modules (`import`/`export`) instead of CommonJS.
-- Use strict typing and avoid using `any`.
-- Declare `types` for data structures and `interfaces` for class contracts.
-- Avoid `null` and `undefined` where possible; prefer optional properties.
-- Leverage TypeScript's utility types (e.g., `Partial`, `Pick`, `Omit`).
+- Follow the best practices of the Java programming language.
+- Use Spring Boot for the application setup.
+- Ensure the code is clean, maintainable, and adheres to SOLID principles.
+- Use meaningful variable and method names.
+- Handle exceptions appropriately and ensure the application is robust.
 
 ## Steps to follow:
 

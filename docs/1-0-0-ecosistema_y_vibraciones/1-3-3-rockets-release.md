@@ -23,7 +23,7 @@ The current branch `feat/rockets` has implementation of `specs/rockets.spec.md`
    - Run tests to ensure they pass.
 
 2. **Update Documentation**:
-   - `package.json`: Update version number according to semantic versioning.
+   - `pom.xml`: Update version number according to semantic versioning.
    - `CHANGELOG.md`: Add new version entry with date and categorize changes.
    - `README.md`: Update links or workflows for new features if applicable.
 
@@ -35,5 +35,5 @@ The current branch `feat/rockets` has implementation of `specs/rockets.spec.md`
 ## Output Checklist
 
 - [ ] All acceptance criteria tests pass successfully
-- [ ] Documentation updated: `package.json`, `CHANGELOG.md`, `README.md`
+- [ ] Documentation updated: `pom.xml`, `CHANGELOG.md`, `README.md`
 - [ ] Git tag created and merged into `main` branch

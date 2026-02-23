@@ -36,8 +36,8 @@ theme: ab
 ## Concreción
 
 ```markdown
-1. Create at root folder a Node app with Typescript modern bare-bone setup.
-2. Add a recent version Express to write an API with a health status endpoint. 
+1. Create at root folder a Spring app with Java modern bare-bone setup.
+2. Add a recent version Spring Boot to write an API with a health status endpoint. 
 3. Smoke test with Playwright and commit changes with conventional message. 
 ```
 
