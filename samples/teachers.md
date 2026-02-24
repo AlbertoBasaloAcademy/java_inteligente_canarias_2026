@@ -2,6 +2,8 @@
 
 https://www.teachai.org/
 
+https://primmportal.com/
+
 ## Introducción a mano
 
 ### Introducción a la computación a mano
@@ -14,6 +16,16 @@ https://www.teachai.org/
 - [ ] Sistemas operativos y software
 - [ ] Representación de datos y codificación
 
+### Introducción al diseño de software a mano
+
+- Dibujar diagramas de flujo, mapas conceptuales o pseudocódigo ayuda a organizar el pensamiento antes de codificar.
+- Fomenta la planificación y la arquitectura de software, habilidades críticas para proyectos complejos.
+- Permite a los estudiantes visualizar la interacción entre componentes y la lógica del programa.
+
+- [ ] Diagramas de flujo para algoritmos
+- [ ] Mapas conceptuales para estructuras de datos
+- [ ] Pseudocódigo para diseño de funciones y clases
+
 ### Introducción a la programación a mano
 
 - Escribir código a mano mejora la comprensión de sintaxis, estructuras de datos y algoritmos.
@@ -24,15 +36,6 @@ https://www.teachai.org/
 - [ ] Estructuras de control (if, loops)
 - [ ] Funciones y procedimientos
 
-### Introducción al diseño de software a mano
-
-- Dibujar diagramas de flujo, mapas conceptuales o pseudocódigo ayuda a organizar el pensamiento antes de codificar.
-- Fomenta la planificación y la arquitectura de software, habilidades críticas para proyectos complejos.
-- Permite a los estudiantes visualizar la interacción entre componentes y la lógica del programa.
-
-- [ ] Diagramas de flujo para algoritmos
-- [ ] Mapas conceptuales para estructuras de datos
-- [ ] Pseudocódigo para diseño de funciones y clases
 
 ### Introducción a la programación orientada a objetos a mano
 
@@ -53,6 +56,16 @@ https://www.teachai.org/
 - [ ] Pseudocódigo de la prueba de una función
 - [ ] Pseudocódigo de la prueba de un proceso de negocio
 - [ ] Pseudocódigo de la prueba de una API o de una web app
+
+### Introducción a la ingeniería de software a mano
+
+- Arquitectura de sistemas: bases de datos, servicios, APIs, frontend/backend
+- Control de versiones: git, ramas, pull requests
+- Diseño de software: patrones, modularidad, escalabilidad
+
+- [ ] Diagramas de arquitectura de software
+- [ ] Ejercicios de control de versiones con git  
+- [ ] Diagramas de patrones de diseño y modularidad
 
 ## Uso de la IA Generativa para Enseñar Programación
 
