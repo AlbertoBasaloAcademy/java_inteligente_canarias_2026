@@ -82,17 +82,17 @@ Tema | Nivel | Docente | Fecha
 [Reto de guide.txt — sección Make]
 ````
 
-Modelo de dominio (esquema):
+### Modelo de dominio (esquema):
 - Ejercicio { id,titulo,tema,nivel,rutaCodigo,rutaGuia }
 - ConfigDocente { nombre, fecha }
 
-Reglas y validaciones:
+### Reglas y validaciones:
 - Si tema/nivel no existe → mensaje con opciones
 - Si falta code.java o guide.txt → error claro con ruta
 - Evitar sobrescritura (sufijo timestamp)
 - Asegurar bloques de código bien cerrados
 
-Notas rápidas:
+### Notas rápidas:
 - Fase inicial: solo ficheros locales, sin BD ni auth
 - Mantener dominio desacoplado de transporte
 - Usar mínimas dependencias para facilitar mantenimiento

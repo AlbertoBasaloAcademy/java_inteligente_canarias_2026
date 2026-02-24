@@ -21,6 +21,7 @@ Llamar al modelo vía Spring AI y usar el primer ejemplo que genere como salida 
 - Registrar prompt, modelo y timestamp en metadatos para trazabilidad.
 - Mantener el adaptador de Spring AI para que el núcleo no dependa del proveedor.
 
+### Diagrama de secuencia
 ````
 Servicios (Spring AI) → Motor de composición → Markdown
 ````

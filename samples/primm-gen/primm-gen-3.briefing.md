@@ -20,13 +20,16 @@ y decidir si pedir al modelo una variación o usar el primer ejemplo.
 - Registrar metadatos mínimos: prompt, modelo, timestamp, hash de salida.
 
 ## Integración
-- Implementar un servicio pequeño «vector-store adapter» que exponga: `search(similarityThreshold)`
-  y `save(embedding, metadata)`; el resto de la aplicación solo usa esta interfaz.
+- Implementar un servicio pequeño «vector-store adapter» que exponga: 
+  - `search(similarityThreshold)` 
+  - `save(embedding, metadata)`
+  - el resto de la aplicación solo usa esta interfaz.
 - Mantener el adaptador separado del motor de composición y del adaptador Spring AI.
 
 ## Notas
-- No automatizar decisiones complejas: si la generación se marca como "similar",
-  pedir al docente confirmación antes de publicar (opcional).
+- No automatizar decisiones complejas: 
+  - si la generación se marca como "similar",
+  - pedir al docente confirmación antes de publicar (opcional).
 - Mantener plantillas locales y uso directo del modelo como fallback.
 
 
