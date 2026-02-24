@@ -4,6 +4,16 @@ https://www.teachai.org/
 
 ## Introducción a mano
 
+### Introducción a la computación a mano
+
+- Cómo funciona el hardware (CPU, memoria, almacenamiento) 
+- Qué hace el software (sistema operativo, compiladores, aplicaciones y datos).
+- Conceptos de bits, bytes, caracteres y representación de datos numéricos.
+
+- [ ] Arquitectura de computadoras
+- [ ] Sistemas operativos y software
+- [ ] Representación de datos y codificación
+
 ### Introducción a la programación a mano
 
 - Escribir código a mano mejora la comprensión de sintaxis, estructuras de datos y algoritmos.
@@ -33,6 +43,16 @@ https://www.teachai.org/
 - [ ] Clases y objetos
 - [ ] Herencia y polimorfismo
 - [ ] Principios SOLID 
+
+### Introducción al testing a mano
+
+- Qué son las pruebas y por qué son imprescindibles
+- Tipos de pruebas: unitarias, integración, end-to-end
+- Cómo escribir pruebas efectivas a mano
+
+- [ ] Pseudocódigo de la prueba de una función
+- [ ] Pseudocódigo de la prueba de un proceso de negocio
+- [ ] Pseudocódigo de la prueba de una API o de una web app
 
 ## Uso de la IA Generativa para Enseñar Programación
 
