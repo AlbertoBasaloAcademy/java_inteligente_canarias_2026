@@ -1,5 +1,8 @@
 # Agenda para edición en Canarias 2026
-Del lunes 2 de marzo al viernes 6 de marzo
+Del lunes 2 al viernes 6 de marzo
+
+`Bloque cero: IA para profesores de programación`
+## Sesión 0: Retos y oportunidades de la IA en la enseñanza
 
 `Bloque uno: Programación inteligente con IA`
 ## Sesión 1 Primitivas y editores
