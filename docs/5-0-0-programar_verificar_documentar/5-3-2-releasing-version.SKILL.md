@@ -26,7 +26,7 @@ Use terminal `git` commands as needed.
 - [ ] Commit all pending changes grouping them by type of change.
 - [ ] Use [Semantic Versioning (SemVer)](./sem-ver.md) principles.
 - [ ] [CHANGELOG.md](/CHANGELOG.md) : Add entries to based on commit history.
-- [ ] Other relevant project files (`package.json` ... ).
+- [ ] Other relevant project files (`pom.xml`, `build.gradle`, etc.).
 
 ## Step 3: Versioning
 

@@ -4,9 +4,9 @@
 Use `Plan` mode in whole screen with all needed tools.
 
 ```md
-I want to unit test my code.
-1. Help me choose one lib/framework.
-2. Install and configure it to be run with `npm run test:dev`
+I want to unit test my Java Spring code.
+1. Help me choose one lib/framework (e.g., JUnit 5, Mockito, Spring Boot Test).
+2. Install and configure it to be run with Maven/Gradle in Spring Boot.
 3. Update documentation, specially 
 - AGENTS.md (be concise, with minimal instructions)
 - .agents/ADD.md (explain architectural paterns and decisions related to testing)
