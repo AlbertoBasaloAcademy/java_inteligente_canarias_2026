@@ -10,6 +10,7 @@ theme: ab
 # 7. Integración de LLMs en Java con Spring AI
 
 - Comunicación con LLMs para usar IA durante la ejecución de aplicaciones Java.
+
 #### [Programación Inteligente](programacion_inteligente.md)  
 > Por [Alberto Basalo](https://albertobasalo.dev)@[AICode.Academy](https://aicode.academy)  
 
