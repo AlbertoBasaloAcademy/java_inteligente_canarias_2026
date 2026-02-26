@@ -37,9 +37,12 @@ theme: ab
 ## Conceptos
 
 ### Configuración básica
-```yaml
-spring.ai.openai.api-key=${OPEN_AI_1}
-spring.ai.openai.chat.options.model=gpt-5-nano
+```config
+spring.ai.model.chat=ollama
+spring.ai.model.embedding=ollama
+spring.ai.ollama.base-url=http://localhost:11434
+spring.ai.ollama.chat.options.model=qwen3:4b
+spring.ai.ollama.chat.options.temperature=1
 ```
 
 ---
@@ -134,7 +137,6 @@ private String sanitizePrompt(String userInput) {
     return userInput.trim();
   }
 ```
-
 ---
 
 ### Guarda raíles remoto
@@ -164,7 +166,7 @@ public String GetAnythingDoubleChecked(@RequestParam String prompt) {
 - Basic Controller
 - Safe Controller
 
-### Práctica: Extiende la aplicación de blogs
+### Práctica: Extiende la aplicación de blogs/lecciones para usar Spring AI y generar contenido dinámico.
 
 - [ ] Solicitar mejora y evaluación del título y descripción.
 - [ ] Generar lista de palabras clave para cada post.
