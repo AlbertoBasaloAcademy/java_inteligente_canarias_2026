@@ -1,6 +1,8 @@
 # java_inteligente
 Laboratorio para curso de Java usando IA
 
+Edición Canarias 2026
+
 [GitHub Alberto Basalo Labs Java Inteligente](https://github.com/AlbertoBasaloLabs/java_inteligente)
 
 
