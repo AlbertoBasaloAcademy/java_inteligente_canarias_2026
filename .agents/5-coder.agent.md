@@ -50,6 +50,6 @@ Read the plan and understand the tasks to complete. Then, implement the tasks in
 
 Apply relevant coding skills based on the technology stack specified in the requirements.
 
-- `coding-type-script`: Best practices for clean and maintainable code in TypeScript
-- `coding-express-api`: Writes API endpoints with Express following layered architecture patterns
-- `testing-unit-vitest`: Writes and maintains unit tests using Vitest. 
+- `coding-java`: Best practices for clean and maintainable code in Java
+- `coding-spring-api`: Writes API endpoints with Spring following layered architecture patterns
+- `testing-unit-junit`: Writes and maintains unit tests using JUnit 5 and Mockito. 
