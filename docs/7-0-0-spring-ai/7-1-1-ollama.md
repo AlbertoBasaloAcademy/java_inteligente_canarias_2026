@@ -7,9 +7,12 @@ https://ollama.com/download
 irm https://ollama.com/install.ps1 | iex
 ```
 
-### Run Ollama with qwen3:8b
+### Run Ollama with qwen3:4b
 ```bash
-ollama run qwen3:8b
+ollama list
+ollama pull qwen3:4b
+ollama run qwen3:4b
+ollama pull nomic-embed-text
 ```
 
 ```bash
