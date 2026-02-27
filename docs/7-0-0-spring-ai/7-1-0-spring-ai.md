@@ -6,7 +6,6 @@ footer: 7. Integración de LLMs en Java con Spring AI. [AlbertoBasalo](https://a
 marp: true
 theme: ab
 ---
-
 # 7. Integración de LLMs en Java con Spring AI
 
 - Comunicación con LLMs para usar IA durante la ejecución de aplicaciones Java.
@@ -24,7 +23,7 @@ theme: ab
 
 ### ¿Qué se necesita?
 
-- Clave API del proveedor del LLM.
+- Modelo local / Clave API del proveedor del LLM.
 - Biblioteca cliente para facilitar las llamadas.
 
 ### ¿Por qué Spring AI?
@@ -37,6 +36,9 @@ theme: ab
 ## Conceptos
 
 ### Configuración básica
+
+Propiedades de spring para escoger el modelo y proveedor de LLM.
+
 ```config
 spring.ai.model.chat=ollama
 spring.ai.model.embedding=ollama
@@ -48,6 +50,8 @@ spring.ai.ollama.chat.options.temperature=1
 ---
 
 ### Hola Mundo
+El `ChatClient` es el componente principal para interactuar con los LLMs.
+El método `prompt()` construye el mensaje,  `call()` lo envía y `content()` obtiene la respuesta.
 
 ```java
 @RestController
@@ -66,6 +70,9 @@ public class ChatController {
 
 ### Instrucciones del sistema
 
+Realmente el mensaje va en el `user()`, 
+Además disponemos de `system()` para dar instrucciones generales.
+
 ```java
 public String GetAstronomyContent(String message) {
   var instructions = """
@@ -78,6 +85,9 @@ public String GetAstronomyContent(String message) {
 ---
 
 ### Plantillas
+
+Los mensajes suelen ser repetitivos, fácilmente _plantillables_.
+Usa `lambda expressions` para definir la estructura y solo cambiar los parámetros.
 
 ```java
 public String ExplainTopic(String topic) {
@@ -96,7 +106,7 @@ public String ExplainTopic(String topic) {
 record Satellite(String name, double radius, double mass) {}
 record Satellites(List<Satellite> satellites) {}
 ```
-
+Puedes recuperar la respuesta directamente como una entidad Java.
 ```java
 public Satellites GetSatellites(String planet) {
     return chatClient.prompt().user(u->{
@@ -109,7 +119,8 @@ public Satellites GetSatellites(String planet) {
 ---
 
 ### Memoria y contexto
-
+Por defecto, las llamadas son `stateless`. 
+Puedes usar `ChatMemory` para mantener el contextocreando una conversación.
 ```java
 public AstroController(ChatClient.Builder builder, ChatMemory chatMemory) {
     var memoryAdvisor = MessageChatMemoryAdvisor.builder(chatMemory).build();
@@ -121,6 +132,7 @@ public AstroController(ChatClient.Builder builder, ChatMemory chatMemory) {
 
 ### Guarda raíles local
 
+El usuario final puede inyectar instrucciones maliciosas en el `prompt`.
 ```java
 public String GetAnythingSanitized(@RequestParam String prompt) {
     var sanitizedPrompt = sanitizePrompt(prompt);
@@ -129,7 +141,6 @@ public String GetAnythingSanitized(@RequestParam String prompt) {
 private String sanitizePrompt(String userInput) {
     var maliciousPhrases = new String[] { 
         "ignora instrucciones anteriores", 
-        "system prompt",
         "eres un experto en" };
     for (var phrase : maliciousPhrases) {
       userInput = userInput.replaceAll("(?i)([^.]*" + phrase + "[^.]*\\.)", "");
@@ -140,7 +151,7 @@ private String sanitizePrompt(String userInput) {
 ---
 
 ### Guarda raíles remoto
-
+Gastando unos pocos _tokens_ extra, puedes usar el LLM para verificar el mensaje.
 ```java
 public String GetAnythingDoubleChecked(@RequestParam String prompt) {
     var checkPrompt = """
