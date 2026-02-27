@@ -6,9 +6,6 @@ Edición Canarias 2026
 [GitHub Alberto Basalo Java Inteligente](https://github.com/AlbertoBasaloAcademy/java_inteligente_canarias_2026)
 
 
-https://start.spring.io/
-
-
 ---
 
 - **Author**: [Alberto Basalo](https://albertobasalo.dev)

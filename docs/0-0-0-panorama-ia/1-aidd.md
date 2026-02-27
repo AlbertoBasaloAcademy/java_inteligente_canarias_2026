@@ -89,7 +89,7 @@ Por [Alberto Basalo](https://albertobasalo.dev)
 
 ### Práctica: 
 
-- [ ] Uso de Java con Spring Boot 
+- [ ] Uso de Java con Spring Boot https://start.spring.io/
 - [ ] Generador de blogs
 - [ ] Generador de lecciones PRIMM
 
