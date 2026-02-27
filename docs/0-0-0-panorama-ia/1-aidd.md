@@ -85,11 +85,11 @@ Por [Alberto Basalo](https://albertobasalo.dev)
 
 - Instalación y configuración (**VS Code + GitHub Copilot**)
 
-
 ---
 
 ### Práctica: 
 
+- [ ] Uso de Java con Spring Boot 
 - [ ] Generador de blogs
 - [ ] Generador de lecciones PRIMM
 
