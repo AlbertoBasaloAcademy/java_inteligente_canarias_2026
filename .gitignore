@@ -51,3 +51,10 @@ build/
 *.ipr
 out/
 .vscode/
+# Node
+node_modules/
+package-lock.json
+
+# Playwright
+test-results/
+playwright-report/
