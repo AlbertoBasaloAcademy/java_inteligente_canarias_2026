@@ -12,12 +12,18 @@ import com.example.demo.model.Rocket;
 
 @Service
 public class RocketService {
-  private final Map<String, Rocket> rocketStorage = new HashMap<>();
+  private final Map<String, Rocket> rocketStorage;
+
+  public RocketService() {
+    this.rocketStorage = new HashMap<>();
+  }
 
   public Rocket createRocket(String name, String rangeValue, int capacity) {
     validateRocketData(name, rangeValue, capacity);
 
-    RangeType range = RangeType.fromValue(rangeValue);
+    RangeType range = RangeType.fromValue(rangeValue)
+        .orElseThrow(() -> new IllegalArgumentException(
+            "Rocket range must be one of: suborbital, orbital, moon, mars"));
     Rocket rocket = new Rocket(name, range, capacity);
     rocketStorage.put(rocket.getId(), rocket);
     return rocket;
@@ -39,7 +45,9 @@ public class RocketService {
       return null;
     }
 
-    RangeType range = RangeType.fromValue(rangeValue);
+    RangeType range = RangeType.fromValue(rangeValue)
+        .orElseThrow(() -> new IllegalArgumentException(
+            "Rocket range must be one of: suborbital, orbital, moon, mars"));
     rocket.setName(name);
     rocket.setRange(range);
     rocket.setCapacity(capacity);
@@ -59,7 +67,7 @@ public class RocketService {
       throw new IllegalArgumentException("Rocket capacity must be between 1 and 10");
     }
 
-    if (RangeType.fromValue(rangeValue) == null) {
+    if (RangeType.fromValue(rangeValue).isEmpty()) {
       throw new IllegalArgumentException(
           "Rocket range must be one of: suborbital, orbital, moon, mars");
     }

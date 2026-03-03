@@ -3,7 +3,7 @@ package com.example.demo.model;
 import java.util.UUID;
 
 public class Rocket {
-  private String id;
+  private final String id;
   private String name;
   private RangeType range;
   private int capacity;
@@ -24,10 +24,6 @@ public class Rocket {
 
   public String getId() {
     return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
   }
 
   public String getName() {

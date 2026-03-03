@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import java.util.Optional;
+
 public enum RangeType {
   SUBORBITAL("suborbital"),
   ORBITAL("orbital"),
@@ -16,12 +18,9 @@ public enum RangeType {
     return value;
   }
 
-  public static RangeType fromValue(String value) {
-    for (RangeType rangeType : RangeType.values()) {
-      if (rangeType.value.equalsIgnoreCase(value)) {
-        return rangeType;
-      }
-    }
-    return null;
+  public static Optional<RangeType> fromValue(String value) {
+    return java.util.Arrays.stream(RangeType.values())
+        .filter(rt -> rt.value.equalsIgnoreCase(value))
+        .findFirst();
   }
 }

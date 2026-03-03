@@ -30,14 +30,17 @@ public class RocketController {
     this.rocketService = rocketService;
   }
 
+  private RocketResponse toResponse(Rocket rocket) {
+    return new RocketResponse(rocket.getId(), rocket.getName(),
+        rocket.getRange().getValue(), rocket.getCapacity());
+  }
+
   @PostMapping
   public ResponseEntity<?> createRocket(@RequestBody RocketRequest request) {
     try {
-      Rocket rocket = rocketService.createRocket(request.getName(), request.getRange(),
-          request.getCapacity());
-      RocketResponse response = new RocketResponse(rocket.getId(), rocket.getName(),
-          rocket.getRange().getValue(), rocket.getCapacity());
-      return ResponseEntity.status(HttpStatus.CREATED).body(response);
+      Rocket rocket = rocketService.createRocket(request.name(), request.range(),
+          request.capacity());
+      return ResponseEntity.status(HttpStatus.CREATED).body(toResponse(rocket));
     } catch (IllegalArgumentException e) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST)
           .body(new ErrorResponse("Validation failed: " + e.getMessage()));
@@ -48,8 +51,7 @@ public class RocketController {
   public ResponseEntity<Collection<RocketResponse>> getAllRockets() {
     Collection<Rocket> rockets = rocketService.getAllRockets();
     Collection<RocketResponse> responses = rockets.stream()
-        .map(r -> new RocketResponse(r.getId(), r.getName(), r.getRange().getValue(),
-            r.getCapacity()))
+        .map(this::toResponse)
         .collect(Collectors.toList());
     return ResponseEntity.ok(responses);
   }
@@ -68,15 +70,13 @@ public class RocketController {
   public ResponseEntity<?> updateRocket(@PathVariable String id,
       @RequestBody RocketRequest request) {
     try {
-      Rocket rocket = rocketService.updateRocket(id, request.getName(), request.getRange(),
-          request.getCapacity());
+      Rocket rocket = rocketService.updateRocket(id, request.name(), request.range(),
+          request.capacity());
       if (rocket == null) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
             .body(new ErrorResponse("Rocket not found"));
       }
-      RocketResponse response = new RocketResponse(rocket.getId(), rocket.getName(),
-          rocket.getRange().getValue(), rocket.getCapacity());
-      return ResponseEntity.ok(response);
+      return ResponseEntity.ok(toResponse(rocket));
     } catch (IllegalArgumentException e) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST)
           .body(new ErrorResponse("Validation failed: " + e.getMessage()));
