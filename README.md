@@ -3,7 +3,10 @@ Laboratorio para curso de Java usando IA
 
 https://meet.google.com/bjt-vxgb-fgy
 
-Edición Canarias 2026
+Edición Canarias Marzo 2026
+
+IES El Rincón
+Las Palmas de Gran Canaria
 
 [GitHub Alberto Basalo Java Inteligente](https://github.com/AlbertoBasaloAcademy/java_inteligente_canarias_2026)
 
