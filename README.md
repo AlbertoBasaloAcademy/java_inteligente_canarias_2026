@@ -7,6 +7,8 @@ Edición Canarias Marzo 2026
 
 IES El Rincón
 Las Palmas de Gran Canaria
+Islas Canarias
+España
 
 [GitHub Alberto Basalo Java Inteligente](https://github.com/AlbertoBasaloAcademy/java_inteligente_canarias_2026)
 
