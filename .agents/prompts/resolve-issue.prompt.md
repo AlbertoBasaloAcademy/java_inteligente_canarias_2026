@@ -2,7 +2,7 @@
 name: resolve-issue
 description: Resolves an issue by committing pending changes.
 argument-hint: Provide the issue number to start coding.
-agent: Coder
+agent: canary_coder
 ---
 # Resolve Issue
 
