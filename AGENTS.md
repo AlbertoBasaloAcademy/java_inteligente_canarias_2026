@@ -14,7 +14,7 @@ Edition: Canarias 2026 - Focus on teaching modern Java development with AI.
 - Database: **None (in-memory for demo)**
 - Security: **Spring Security defaults**
 - Testing: **JUnit 5 + Mockito (unit), Playwright (E2E)**
-- Logging: **Spring Boot default (SLF4J + Logback)**
+- Logging: **Custom LoggerUtil with console output**
 
 ### Development workflow
 ```bash
@@ -53,7 +53,8 @@ java -jar target/demo-0.0.1-SNAPSHOT.jar
 │   │   │   ├── api/                       # DTOs and API models
 │   │   │   ├── controller/                # REST controllers
 │   │   │   ├── model/                     # Entity models
-│   │   │   └── service/                   # Business logic layer
+│   │   │   ├── service/                   # Business logic layer
+│   │   │   └── util/                      # Shared utilities (LoggerUtil)
 │   │   └── resources/
 │   │       └── application.properties     # Spring configuration
 │   └── test/
