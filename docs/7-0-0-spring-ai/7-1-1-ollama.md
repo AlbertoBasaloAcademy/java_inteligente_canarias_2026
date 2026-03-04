@@ -16,11 +16,11 @@ ollama pull nomic-embed-text
 ```
 
 ```bash
-curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:8b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "Hello!"}] }'
+curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:4b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "Hello!"}] }'
 
-curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:8b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What color is the sky?"}] }'
+curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:4b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What color is the sky?"}] }'
 
-curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:8b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What is mars?"}] }'
+curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:4b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What is mars?"}] }'
 
-curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:8b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What is 3I/ATLAS?"}] }'
+curl http://localhost:11434/api/chat  -d '{ "model": "qwen3:4b","think": false,  "stream": false, "messages": [{"role": "system", "content": "No introductions. No conclusions. Stay concise at all times."}, {"role": "user", "content": "What is 3I/ATLAS?"}] }'
 ```
