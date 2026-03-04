@@ -1,7 +1,7 @@
 # java_inteligente
 Laboratorio para curso de Java usando IA
 
-https://meet.google.com/bjt-vxgb-fgy
+https://meet.google.com/aze-esrx-xhb
 
 Edición Canarias Marzo 2026
 
