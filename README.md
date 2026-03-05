@@ -2,6 +2,8 @@
 Laboratorio para curso de Java usando IA
 https://meet.google.com/mso-bdop-czi
 
+https://drive.google.com/drive/folders/1eHXrzNdBR5uZ2LJzFCx_AHXQsgiHl6GH?usp=sharing
+
 Edición Canarias Marzo 2026
 
 IES El Rincón
