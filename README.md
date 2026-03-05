@@ -1,8 +1,13 @@
 # java_inteligente
 Laboratorio para curso de Java usando IA
-https://meet.google.com/mso-bdop-czi
+
+Virtual: 
+Inicio: 8 canarias 9 peninsula
+Fin: 14 canarias 15 peninsula
 
 https://drive.google.com/drive/folders/1eHXrzNdBR5uZ2LJzFCx_AHXQsgiHl6GH?usp=sharing
+
+
 
 Edición Canarias Marzo 2026
 
