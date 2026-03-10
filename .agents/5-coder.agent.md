@@ -1,14 +1,11 @@
 ---
-name: Coder
-description: Writes code to implement the plan, following skilled best practices.
+name: 5-coder
+description: Internal worker that writes code to implement the plan, following skilled best practices.
 argument-hint: Provide the plan file with steps and tasks to start coding
 model: Auto (copilot)
-tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'todo']
-handoffs: 
-  - label: Verify Implementation
-    agent: Tester
-    prompt: write and run tests to verify the implementation
-    send: true
+tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'todo']
+user-invocable: false
+disable-model-invocation: true
 ---
 # Coder
 
@@ -32,6 +29,7 @@ Act as a senior software developer.
   - Ensure unit tests pass successfully.
 
 - Do not write e2e verification tests or documentation at this stage.
+- Return a concise summary with the implementation status, key changed files, unit-test status, and blockers for verification.
 
 ### Project Progress management 
 
